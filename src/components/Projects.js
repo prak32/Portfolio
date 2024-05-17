@@ -44,17 +44,17 @@ const Projects = ({ data }) => {
   return (
     <div>
       <div className='flex justify-center '>
-        <div className='flex flex-col h-[14vh] w-[76vw] mb-6'>
+        <div className='flex flex-col mt-12 h-[11vh] w-[76vw] md:h-[14vh] md:w-[76vw] mb-6 border border-red-900'>
           <div className='flex justify-center '>
-            <p className='font-bold text-4xl text-gray-700'>Projects</p>
+            <p className='font-bold text-gray-700 text-1xl md:text-4xl lg:text-5xl '>Projects</p>
           </div>
           <div className='flex justify-center p-2'>
-            <p className='text-gray-600 text-xl font-semibold'>Things I’ve built so far</p>
+            <p className='text-gray-600 font-semibold text-sm md:text-xl lg:text-2xl '>Things I’ve built so far</p>
           </div>
         </div> 
       </div>
       <div className='flex justify-center'>
-        <div className='flex flex-wrap justify-between h-[134vh] w-[76vw]'>
+        <div className='flex flex-wrap justify-between h-[134vh] w-[76vw] border border-green-800'>
             {ObjectData.map((item) => (
               <Card
                 imgsrc={item.imgsrc}

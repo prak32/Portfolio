@@ -6,7 +6,7 @@ import Footer from './Footer';
 const AllComponents = () => {
   return (
     <div>
-       <div className='flex flex-col gap-40 bg-gray-100'>
+       <div className='flex flex-col bg-gray-100 gap-40 md:gap-40'>
       <About/>
       <TechStack/>
       <Projects/>
@@ -16,4 +16,4 @@ const AllComponents = () => {
   )
 }
 
-export default AllComponents
+export default AllComponents                          

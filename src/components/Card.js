@@ -7,12 +7,12 @@ const Card = (props) => {
     <div className="h-[61vh] w-[24vw] rounded-t-xl rounded-b-xl hover:border border-violet-600">
       <div className='flex flex-col'>
         <div>
-          <img src={props.imgsrc} alt="" className='h-[28vh] w-[24vw] rounded-t-xl'/>    
+          <img src={props.imgsrc} alt="" className=' h-[14vh] w-[24vw] md:h-[28vh] md:w-[24vw] rounded-t-xl'/>    
         </div>
         <div className='h-[32.5vh] bg-white rounded-b-xl shadow-2xl'>
           <div className='flex flex-col gap-3'>
             <div className='w-[22vw]'>
-              <p className='text-center font-bold text-md text-black-600 mt-2'>{props.title}</p>
+              <p className='text-center font-bold text-xs text-black-600 mt-2'>{props.title}</p>
             </div>
             <div className='flex flex-col gap-3'>
               <div className='w-[22vw] text-sm text-gray-500 text-justify pl-6'>
