@@ -29,67 +29,139 @@ const TechStack = () => {
   }, []);
   return (
     <div className="flex justify-center">
-      <div className="flex flex-col gap-5">
-        <div>
-          <div className="flex flex-col gap-2 h-[16vh] w-[76vw]">
-            <div className="flex justify-center">
-              <p className="font-bold text-4xl text-gray-700">My Tech Stack</p>
-            </div>
-            <div className="flex justify-center">
-              <p className="text-gray-600 text-md md:text-xl font-semibold">
-                {" "}
-                Technologies I’ve been working with recently
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {width>700 ? (
+      <div className="flex flex-col gap-6">
+  
+        {width > 700 ? (
           <div>
-            <div className="w-[76vw] flex flex-col gap-14">
+            <div className="flex flex-col gap-2 md:gap-3 md:mt-auto lg:mt-32 lg:gap-5 w-[76vw]">
+              <div className="flex justify-center">
+                <p className="font-bold text-3xl mt-56 md:mt-24 lg:mt-2 md:text-4xl lg:text-5xl text-gray-700">
+                  My Tech Stack
+                </p>
+              </div>
+              <div className="flex justify-center">
+                <p className="text-gray-600 text-lg md:text-xl lg:text-2xl font-semibold">
+                  Technologies I’ve been working with recently
+                </p>
+              </div>
+            </div>
+            <div className="w-[76vw] flex flex-col gap-14 mt-5 md:mt-6 lg:mt-12">
               <div className="flex justify-between">
-                <img className="h-14 w-14" src={svgImage1} alt="SVG Image1" />
-                <img className="h-14 w-14" src={svgImage2} alt="SVG Image2" />
-                <img className="h-14 w-14" src={svgImage3} alt="SVG Image3" />
-                <img className="h-14 w-14" src={svgImage4} alt="SVG Image4" />
-                <img className="h-14 w-14" src={svgImage5} alt="SVG Image5" />
-                <img className="h-14 w-14" src={svgImage6} alt="SVG Image6" />
+                <img
+                  className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                  src={svgImage1}
+                  alt="SVG Image1"
+                />
+                <img
+                  className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                  src={svgImage2}
+                  alt="SVG Image2"
+                />
+                <img
+                  className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                  src={svgImage3}
+                  alt="SVG Image3"
+                />
+                <img
+                  className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                  src={svgImage4}
+                  alt="SVG Image4"
+                />
+                <img
+                  className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                  src={svgImage5}
+                  alt="SVG Image5"
+                />
+                <img
+                  className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                  src={svgImage6}
+                  alt="SVG Image6"
+                />
               </div>
               <div className="flex justify-between">
-                <img className="h-14 w-14" src={svgImage7} alt="SVG Image7" />
-                <img className="h-14 w-14" src={svgImage8} alt="SVG Image8" />
-                <img className="h-14 w-14" src={svgImage9} alt="SVG Image9" />
-                <img className="h-14 w-14" src={svgImage10} alt="SVG Image10" />
-                <img className="h-14 w-14" src={svgImage11} alt="SVG Image11" />
-                <img className="h-14 w-14" src={svgImage12} alt="SVG Image12" />
+                <img
+                  className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                  src={svgImage7}
+                  alt="SVG Image7"
+                />
+                <img
+                  className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                  src={svgImage8}
+                  alt="SVG Image8"
+                />
+                <img
+                  className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                  src={svgImage9}
+                  alt="SVG Image9"
+                />
+                <img
+                  className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                  src={svgImage10}
+                  alt="SVG Image10"
+                />
+                <img
+                  className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                  src={svgImage11}
+                  alt="SVG Image11"
+                />
+                <img
+                  className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                  src={svgImage12}
+                  alt="SVG Image12"
+                />
               </div>
             </div>
           </div>
         ) : (
-          <div className="flex justify-center">
-          <div className="flex  flex-col gap-3 ">
-            <div className="flex gap-4">
-              <img className="h-10 w-10" src={svgImage1} alt="SVG Image1" />
-              <img className="h-10 w-10" src={svgImage2} alt="SVG Image2" />
-              <img className="h-10 w-10" src={svgImage3} alt="SVG Image3" />
+          <>
+            <div className="flex flex-col h-[12vh] w-[74vw] mt-20">
+              <div className="flex justify-center">
+                <p className="font-bold text-xl text-gray-700">My Tech Stack</p>
+              </div>
+              <div className="flex justify-center">
+                <p className="text-gray-600 text-sm font-semibold">
+                  Technologies I’ve been working with recently
+                </p>
+              </div>
             </div>
-            <div className="flex gap-4">
-              <img className="h-10 w-10" src={svgImage4} alt="SVG Image4" />
-              <img className="h-10 w-10" src={svgImage5} alt="SVG Image5" />
-              <img className="h-10 w-10" src={svgImage6} alt="SVG Image6" />
+
+            <div className="flex justify-center">
+              <div className="flex flex-col gap-5">
+                <div className="flex gap-8">
+                  <img className="h-10 w-10" src={svgImage1} alt="SVG Image1" />
+                  <img className="h-10 w-10" src={svgImage2} alt="SVG Image2" />
+                  <img className="h-10 w-10" src={svgImage3} alt="SVG Image3" />
+                </div>
+                <div className="flex gap-8">
+                  <img className="h-10 w-10" src={svgImage4} alt="SVG Image4" />
+                  <img className="h-10 w-10" src={svgImage5} alt="SVG Image5" />
+                  <img className="h-10 w-10" src={svgImage6} alt="SVG Image6" />
+                </div>
+                <div className="flex gap-8">
+                  <img className="h-10 w-10" src={svgImage7} alt="SVG Image7" />
+                  <img className="h-10 w-10" src={svgImage8} alt="SVG Image8" />
+                  <img className="h-10 w-10" src={svgImage9} alt="SVG Image9" />
+                </div>
+                <div className="flex gap-8">
+                  <img
+                    className="h-10 w-10"
+                    src={svgImage10}
+                    alt="SVG Image10"
+                  />
+                  <img
+                    className="h-10 w-10"
+                    src={svgImage11}
+                    alt="SVG Image11"
+                  />
+                  <img
+                    className="h-10 w-10"
+                    src={svgImage12}
+                    alt="SVG Image12"
+                  />
+                </div>
+              </div>
             </div>
-            <div className="flex gap-4">
-              <img className="h-10 w-10" src={svgImage7} alt="SVG Image7" />
-              <img className="h-10 w-10" src={svgImage8} alt="SVG Image8" />
-              <img className="h-10 w-10" src={svgImage9} alt="SVG Image9" />
-            </div>
-            <div className="flex fap-4">
-              <img className="h-10 w-10" src={svgImage10} alt="SVG Image10" />
-              <img className="h-10 w-10" src={svgImage11} alt="SVG Image11" />
-              <img className="h-10 w-10" src={svgImage12} alt="SVG Image12" />
-            </div>
-          </div>
-          </div>
+          </>
         )}
       </div>
     </div>
